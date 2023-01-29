@@ -1,0 +1,22 @@
+{
+  "name": "hasweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-kulkarni-25/hasweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-kulkarni-25/hasweb/issues"
+  },
+  "homepage": "https://github.com/rohan-kulkarni-25/hasweb#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
