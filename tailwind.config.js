@@ -2,6 +2,14 @@
 module.exports = {
   content: ["*"],
   theme: {
+    screens: {
+      '2xl': { 'max': '1535px' },
+      'xl': { 'max': '1400px' },
+      'lg': { 'max': '1200px' },
+      'md': { 'max': '900px' },
+      'sm': { 'max': '750px' },
+      //
+    },
     extend: {
       colors:{
       transparent: 'transparent',
