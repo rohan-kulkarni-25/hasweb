@@ -6,7 +6,7 @@ module.exports = {
       '2xl': { 'max': '1535px' },
       'xl': { 'max': '1400px' },
       'lg': { 'max': '1200px' },
-      'md': { 'max': '900px' },
+      'md': { 'max': '1000px' },
       'sm': { 'max': '750px' },
       //
     },

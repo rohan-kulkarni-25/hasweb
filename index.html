@@ -11,59 +11,57 @@
 
 <body>
   <!-- HEADER SECTION -->
-  <nav
-    class="px-2 sm:px-4 py-2.5  fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 bg-white ">
+  <nav class="px-12 md:py-6 fixed w-full z-20 top-0 left-0 border-b-2 border-yellow-sea-500 bg-white sm:px-4">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       <a href="/" class="flex items-center">
         <img src="./assets/images/logo.png" class="h-6 mr-3 sm:h-10" alt="Flowbite Logo" />
-        <p class="font-batangas text-3xl self-center  font-semibold whitespace-nowrap dark:text-white">Hack At
+        <p class="font-batangas text-3xl self-center whitespace-nowrap sm:text-sm ">Hack At
           <span class="text-yellow-500 ">SITS</span> 2.0
         </p>
       </a>
-      <div class="flex lg:order-2">
-        <button type="button"
-          class="text-white bg-black hover:bg-yellow-sea-500 hover:text-black font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-3 md:mr-0 font-batangas">Register</button>
-      </div>
-      <div class="items-center justify-between hidden w-full lg::flex md:w-auto sm:order-1" id="navbar-sticky ">
-        <ul
-          class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+      <div class="items-center justify-between md:hidden" id="navbar-sticky ">
+        <ul class="flex flex-row p-4 mt-4 text-2xl">
           <li>
             <a href="#about"
-              class="block py-2 pl-3 pr-4 text-black  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-yellow-sea-500 font-batangas">About</a>
+              class="block py-2 pl-3 pr-4 text-black  rounded   hover:text-yellow-sea-500 font-batangas">About</a>
           </li>
           <li>
             <a href="#tracks"
-              class="block py-2 pl-3 pr-4 text-black  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-yellow-sea-500 font-batangas">Tracks</a>
+              class="block py-2 pl-3 pr-4 text-black  rounded   hover:text-yellow-sea-500 font-batangas">Tracks</a>
           </li>
           <li>
             <a href="#schedule"
-              class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0   font-batangas">Schedule</a>
+              class="block py-2 pl-3 pr-4 text-black  rounded   hover:text-yellow-sea-500 font-batangas">Schedule</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:p-0  opacity-30 font-batangas">Prizes</a>
+            <a href="#" class="block py-2 pl-3 pr-4 text-black  rounded    font-batangas opacity-50">Prizes</a>
           </li>
 
         </ul>
+      </div>
+      <div class="flex order-2">
+        <button type="button"
+          class="text-white bg-black hover:bg-yellow-sea-500 hover:text-black font-medium rounded-lg text-xl px-5 py-2.5 text-center mr-3 md:mr-0 font-batangas sm:text-sm">Register</button>
       </div>
     </div>
   </nav>
 
   <section class="mx-24 flex align-middle h-screen justify-around md:flex-col md:h-fit md:my-24">
-    <img src="./assets/images/logo.png" class="self-center xl:h-96 lg:h-72">
-    <p class="text-9xl text-center font-batangas self-center xl:text-8xl lg:text-7xl">4 weeks<br /> hybrid </br>
+    <img src="./assets/images/logo.png" class="self-center xl:h-96 lg:h-72 sm:h-48">
+    <p class="text-9xl text-center font-batangas self-center xl:text-8xl lg:text-7xl sm:text-5xl sm:mt-8">4 weeks<br />
+      hybrid </br>
       hackathon
     </p>
 
   </section>
-  <div class="bg-yellow-sea-500 h-1 w-full"></div>
+  <div class="bg-yellow-sea-500 h-1 w-full sm:h-0.5"></div>
   <!-- ABOUT US SECTIONS -->
-  <div class="flex flex-col  " id="about">
-    <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl  lg:text-7xl">about</p>
+  <div class="flex flex-col" id="about">
+    <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl  lg:text-7xl sm:text-5xl">about</p>
     <div class="w-3/4 flex self-center justify-between md:flex-col">
       <div
-        class="w-1/2  text-2xl flex flex-col gap-12 my-48 self-center align-middle xl:text-xl lg:text-lg lg:gap-8 lg:my-24 md:w-full">
-        <p class=" leading-relaxed text-justify">
+        class="w-1/2  text-2xl flex flex-col gap-12 my-48 self-center align-middle xl:text-xl lg:text-lg lg:gap-8 lg:my-24 md:w-full sm:text-sm sm:my-12">
+        <p class="leading-relaxed text-justify">
           Hack At SITS is started to provide a platform for new hackers to build meaningful products. Raw ideas get
           wasted
           due
@@ -77,131 +75,134 @@
           ideas.“Pitch your Hack” will be in-person event in May.
         </p>
       </div>
-      <img src="./assets/images/about.png" class="h-fit self-center xl:h-96 lg:h-72">
+      <img src="./assets/images/about.png" class="h-fit self-center xl:h-96 lg:h-72 sm:h-48">
     </div>
   </div>
-  <div class="bg-yellow-sea-500 h-1 w-full"></div>
+<div class="bg-yellow-sea-500 h-1 w-full sm:h-0.5"></div>
   <!-- TRACKS SECTIONS -->
-  <section class=" flex justify-center align-middle m-12 flex-col gap-20 " id="tracks">
-    <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl lg:text-7xl">tracks</p>
-    <div class="p-8 flex flex-wrap justify-evenly gap-16 xl:gap-8 xl:w-full self-center">
-      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80">
+  <section class=" flex justify-center align-middle m-12 flex-col gap-20 sm:gap-10 sm:m-1" id="tracks">
+    <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl lg:text-7xl sm:text-5xl sm:mt-12">tracks
+    </p>
+    <div class="p-8 flex flex-wrap justify-evenly gap-16 xl:gap-8 xl:w-full self-center sm:gap-4 sm:pt-0">
+      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80 sm:gap-2 ">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="self-center  h-24 lg:h-20">
+          class="self-center  h-24 lg:h-20 sm:h-12">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
         </svg>
-        <p class="text-3xl text-center font-batangas text-black lg:text-2xl ">Web3,BlockChain & Crypto</p>
+        <p class="text-3xl text-center font-batangas text-black lg:text-2xl sm:text-lg">Web3,BlockChain & Crypto</p>
       </div>
-      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80">
+      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80 sm:gap-2 ">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="self-center  h-24 lg:h-20">
+          class="self-center  h-24 lg:h-20 sm:h-12">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
         </svg>
-        <p class="text-3xl text-center font-batangas text-black lg:text-2xl ">Web3,BlockChain & Crypto</p>
+        <p class="text-3xl text-center font-batangas text-black lg:text-2xl sm:text-lg">Web3,BlockChain & Crypto</p>
       </div>
-      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80">
+      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80 sm:gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="self-center  h-24 lg:h-20">
+          class="self-center  h-24 lg:h-20 sm:h-12">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
         </svg>
-        <p class="text-3xl text-center font-batangas text-black lg:text-2xl ">Web3,BlockChain & Crypto</p>
+        <p class="text-3xl text-center font-batangas text-black lg:text-2xl sm:text-lg">Web3,BlockChain & Crypto</p>
       </div>
-      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80">
+      <div class="flex-col w-96 rounded-2xl p-4 flex gap-8 border-yellow-sea-500 border-2 lg:gap-4 lg:w-80 sm:gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="self-center  h-24 lg:h-20">
+          class="self-center  h-24 lg:h-20 sm:h-12">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
         </svg>
-        <p class="text-3xl text-center font-batangas text-black lg:text-2xl ">Web3,BlockChain & Crypto</p>
+        <p class="text-3xl text-center font-batangas text-black lg:text-2xl sm:text-lg">Web3,BlockChain & Crypto</p>
       </div>
+
     </div>
-    </section>
-    <!-- TRACKS SECTIONS -->
-    <div class="bg-yellow-sea-500 h-1 w-full"></div>
-    
-    <!-- SCHEDULE SECTION -->
-    <section class=" flex justify-center align-middle m-12 flex-col gap-20 " id="schedule">
-      <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl lg:text-7xl lg:mt-12">schedule</p>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg self-center mb-24 w-fit">
-        <table class="w-fit text-sm text-left">
-          <tbody>
-            <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
-                1 Feb, 2023
-              </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
-                Pre-registration Starts
-              </td>
+  </section>
+  <!-- TRACKS SECTIONS -->
+<div class="bg-yellow-sea-500 h-1 w-full sm:h-0.5"></div>
+
+<!-- SCHEDULE SECTION -->
+  <section class=" flex justify-center align-middle m-12 flex-col gap-20 sm:gap-10" id="schedule">
+    <p class="text-9xl text-center font-batangas self-center mt-24 xl:text-8xl lg:text-7xl lg:mt-12 sm:text-5xl sm:mt-12">
+      schedule
+    </p>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg self-center mb-24 w-fit">
+      <table class="w-fit text-left">
+        <tbody>
+          <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
+            <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap   sm:text-base sm:py-2 sm:px-4">
+              1 Feb, 2023
+            </th>
+            <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
+              Pre-registration Starts
+            </td>
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
-                10 Feb, 2023
-              </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
-                Registration Starts
-              </td>
-    
+            <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap   sm:text-base sm:py-2 sm:px-4">
+              10 Feb, 2023
+            </th>
+            <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
+              Registration Starts
+            </td>
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
+              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap sm:text-base sm:py-2 sm:px-4">
                 28 Feb, 2023
               </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
+              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
                 Release workshops schedule
               </td>
-    
+            
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
+              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap sm:text-base sm:py-2 sm:px-4">
                 March & April
               </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
+              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
                 Workshops & Twitter Spaces
               </td>
-    
+            
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
+              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap sm:text-base sm:py-2 sm:px-4">
                 1 April, 2023
               </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
+              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
                 Hacking Period Starts
               </td>
-    
+            
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
+              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap sm:text-base sm:py-2 sm:px-4 ">
                 30 April, 2023
               </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
+              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
                 Hacking Period Ends
               </td>
-    
+            
             </tr>
             <tr class="border-b-2 border-yellow-sea-500 hover:bg-yellow-sea-500 font-batangas">
-              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap  ">
+              <th scope="row" class="px-6 py-4 font-medium text-2xl text-black whitespace-nowrap sm:text-base sm:py-2 sm:px-4 ">
                 May
               </th>
-              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500">
+              <td class="px-6 py-4 text-black text-2xl  border-l-2 border-yellow-sea-500 sm:text-base sm:py-2 sm:px-4">
                 In-person "Pitch your Hack Day"
               </td>
-    
+            
             </tr>
-    
-          </tbody>
+            </tbody>
         </table>
-      </div>
+        </div>
   </section>
   <!-- SCHEDULE SECTION -->
-  <div class="bg-yellow-sea-500 h-1 w-full"></div>
+<div class="bg-yellow-sea-500 h-1 w-full sm:h-0.5"></div>
   <!-- PRIZES SECTION TEMP -->
-  
+
   <div class="flex flex-col items-center justify-center ">
-    <p class="text-9xl text-center font-batangas self-center mt-24 opacity-50 xl:text-8xl lg:text-7xl">prizes</p>
-    <div class="relative items-center max-w-sm p-6 flex mt-48">
+    <p class="text-9xl text-center font-batangas self-center mt-24 opacity-50 xl:text-8xl lg:text-7xl sm:text-5xl">prizes
+    </p>
+    <div class="relative items-center max-w-sm p-6 flex mt-48 sm:mt-24">
       <div role="status" class="absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2">
         <svg aria-hidden="true" class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
           viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,14 +216,14 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
-    <p class="font-batangas text-2xl opacity-50 text-center lg:text-xl">comming soon....</p>
+    <p class="font-batangas text-2xl opacity-50 text-center lg:text-xl sm:text-sm">comming soon....</p>
     </div>
   <!-- PRIZES SECTION TEMP -->
 
   <!-- <div class="bg-yellow-sea-500 h-2 w-full"></div> -->
   <footer class="flex justify-center h-96 flex-col">
-    <div class="bg-yellow-sea-500 h-1 w-3/4 self-center opacity-50 mt-24"></div>
-    <p class="p-12 font-batangas text-xl  text-center">
+    <div class="bg-yellow-sea-500 h-1 w-3/4 sm:w-full self-center opacity-50 mt-24"></div>
+    <p class="p-12 font-batangas text-xl  text-center sm:text-sm sm:p-4">
       Copyright 2023 Hack At SITS. All rights reserved
     </p>
 
