@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Upload Preview</title>
+  <style>
+    /* #preview {
+      max-width: 300px;
+      max-height: 300px;
+    } */
+  </style>
+  <link rel="stylesheet" href="./assets/styles/output.css">
+</head>
+
+<body>
+  <h1>Image Upload Preview</h1>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" id="image" onchange="previewImage();" />
+    <br />
+    <div class="flex justify-center ">
+      <div id="im" class="flex h-full w-fit">
+        <img src="./nobg.png" class="absolute " alt="">
+        <img id="preview" class=" bg-black w-fit h-fit" />
+      </div>
+    </div>
+
+    <br />
+    <button type="button" onclick="downloadImage();">Download</button>
+  </form>
+  <script>
+    function previewImage() {
+      var preview = document.querySelector('#preview');
+      var file = document.querySelector('#image').files[0];
+      var reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        preview.src = reader.result;
+      }, false);
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function downloadImage() {
+      var preview = document.querySelector('#im');
+      var link = document.createElement('a');
+      link.download = 'preview.png';
+      link.href = preview.src;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+
+</html>
